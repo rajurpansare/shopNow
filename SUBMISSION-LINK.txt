@@ -1,0 +1,15 @@
+ShopNow DevOps Assignment - GitHub Repository
+
+Repository:
+https://github.com/rajurpansare/shopNow
+
+Assignment: DevOps - Containerization and Container Orchestration
+
+Contents:
+- Dockerized MERN application
+- Kubernetes deployment manifests
+- MongoDB StatefulSet and persistent storage
+- Helm chart
+- Backend HPA
+- Jenkins CI/CD pipeline
+- Assignment documentation

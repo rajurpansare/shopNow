@@ -1,0 +1,32 @@
+namespace: shopnow
+
+images:
+  backend: shopnow-backend:latest
+  frontend: shopnow-frontend:latest
+  admin: shopnow-admin:latest
+  mongo: mongo:7
+
+backend:
+  replicas: 2
+  port: 5000
+  resources:
+    requests: { cpu: 100m, memory: 128Mi }
+    limits: { cpu: 500m, memory: 512Mi }
+  hpa:
+    enabled: true
+    minReplicas: 2
+    maxReplicas: 5
+    cpu: 70
+
+frontend:
+  replicas: 2
+  nodePort: 30080
+
+admin:
+  replicas: 2
+  nodePort: 30081
+
+mongo:
+  storage: 1Gi
+  username: shopuser
+  password: ShopNowPass123
