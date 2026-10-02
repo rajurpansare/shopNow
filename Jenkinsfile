@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'DOCKERHUB_USERNAME', defaultValue: 'YOUR_DOCKERHUB_USERNAME', description: 'Docker Hub username')
+        string(name: 'DOCKERHUB_USERNAME', defaultValue: 'rajurpansare', description: 'Docker Hub username')
         string(name: 'K8S_NAMESPACE', defaultValue: 'shopnow', description: 'Kubernetes namespace')
         choice(name: 'DEPLOY', choices: ['true', 'false'], description: 'Deploy to Kubernetes after pushing images')
     }
